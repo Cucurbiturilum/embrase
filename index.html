@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Embrace</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+          integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</head>
+<body>
+<header class="sticky-top">
+    <nav class="navbar navbar-expand-md justify-content-between align-items-center bg-white">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.webp" alt="logo" class="img-fluid">
+        </a>
+        <!-- Button trigger modal -->
+        <div class="btn-demo-outline d-md-none">
+            <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#demoModal">
+                Arrange a demo
+            </button>
+        </div>
+        <!-- Modal Demo -->
+        <div class="modal fade" id="demoModal" tabindex="-1" role="dialog" aria-labelledby="demoModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog align-items-center min-vh-100">
+                <div class="modal-content border-0">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title text-uppercase" id="demoModalLabel">Arrange a demo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M7.14215 5.82149L12.4455 0.518194L13.624 1.6967L8.32066 7L13.624 12.3033L12.4455 13.4818L7.14215 8.17851L1.83884 13.4818L0.660332 12.3033L5.96364 7L0.660332 1.6967L1.83884 0.518195L7.14215 5.82149Z"
+                                      fill="#9BA8B6"/>
+                            </svg>
+                        </span>
+                        </button>
+                    </div>
+                    <form action="">
+                        <div class="modal-body">
+                            <div class="input-group mb-4">
+                                <label for="name" class="form-control-label">Your Name</label>
+                                <div class="input-group-prepend">
+                                <span class="input-group-text border-0 bg-white" id="basic-addon1">
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M5.02943 15.1166C6.35275 16.2886 8.09328 17.0002 10 17.0002C11.9067 17.0002 13.6473 16.2886 14.9706 15.1166C14.7267 14.2396 12.9745 13.6668 10 13.6668C7.02552 13.6668 5.27334 14.2396 5.02943 15.1166ZM3.83376 13.7707C4.77163 12.5319 6.9755 12.0002 10 12.0002C13.0245 12.0002 15.2284 12.5319 16.1662 13.7707C17.0072 12.5588 17.5 11.087 17.5 9.50016C17.5 5.35803 14.1421 2.00016 10 2.00016C5.85787 2.00016 2.5 5.35803 2.5 9.50016C2.5 11.087 2.99282 12.5588 3.83376 13.7707ZM10 18.6668C4.93739 18.6668 0.833336 14.5628 0.833336 9.50016C0.833336 4.43755 4.93739 0.333496 10 0.333496C15.0626 0.333496 19.1667 4.43755 19.1667 9.50016C19.1667 14.5628 15.0626 18.6668 10 18.6668ZM6.66667 7.8335C6.66667 5.96329 7.98258 4.50016 10 4.50016C12.0118 4.50016 13.3333 6.10148 13.3333 8.00016C13.3333 10.7332 11.8484 12.0002 10 12.0002C8.13406 12.0002 6.66667 10.6896 6.66667 7.8335ZM8.33333 7.8335C8.33333 9.72454 9.01518 10.3335 10 10.3335C10.9814 10.3335 11.6667 9.74882 11.6667 8.00016C11.6667 6.95884 11.013 6.16683 10 6.16683C8.94478 6.16683 8.33333 6.84668 8.33333 7.8335Z"
+                                              fill="#CDD3DB"/>
+                                    </svg>
+                                </span>
+                                </div>
+                                <input type="text" class="form-control border-0" id="name" aria-label="Username"
+                                       aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-4">
+                                <label for="email" class="form-control-label">Email</label>
+                                <div class="input-group-prepend">
+                                <span class="input-group-text border-0 bg-white" id="basic-addon2">
+                                    <svg width="20" height="15" viewBox="0 0 20 15" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M17.5 3.65205V1.66667H2.5V3.65166L10 7.40205L17.5 3.65205ZM17.5 5.51544L9.99998 9.26545L2.5 5.51509V13.3333H17.5V5.51544ZM2.5 0H17.5C18.4205 0 19.1667 0.746192 19.1667 1.66667V13.3333C19.1667 14.2538 18.4205 15 17.5 15H2.5C1.57953 15 0.833336 14.2538 0.833336 13.3333V1.66667C0.833336 0.746192 1.57953 0 2.5 0Z"
+      fill="#CDD3DB"/>
+</svg>
+                                </span>
+                                </div>
+                                <input type="email" class="form-control border-0" id="email" aria-label="Email"
+                                       aria-describedby="basic-addon2">
+                            </div>
+                            <div class="input-group mb-4">
+                                <label for="phone" class="form-control-label">Phone</label>
+                                <div class="input-group-prepend">
+                                <span class="input-group-text border-0 bg-white" id="basic-addon3">
+                                    <svg width="12" height="20" viewBox="0 0 12 20" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M1.83333 0.833496H10.1667C11.0871 0.833496 11.8333 1.57969 11.8333 2.50016V17.5002C11.8333 18.4206 11.0871 19.1668 10.1667 19.1668H1.83333C0.912856 19.1668 0.166664 18.4206 0.166664 17.5002V2.50016C0.166664 1.57969 0.912856 0.833496 1.83333 0.833496ZM4.33333 2.50016H1.83333V17.5002H10.1667V2.50016H7.66667C7.66667 2.9604 7.29357 3.3335 6.83333 3.3335H5.16666C4.70643 3.3335 4.33333 2.9604 4.33333 2.50016Z"
+      fill="#CDD3DB"/>
+</svg>
+                                </span>
+                                </div>
+                                <input type="text" class="form-control border-0" id="phone" aria-label="Phone-number"
+                                       aria-describedby="basic-addon3">
+                            </div>
+                            <div class="input-group mb-4">
+                                <label for="industry" class="form-control-label">Industry</label>
+                                <div class="input-group-prepend">
+                                <span class="input-group-text border-0 bg-white"
+                                      id="basic-addon4">
+                                                            <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M5.66666 4.16667H2.33333V8.33333H8.16666H9.83333H15.6667V4.16667H12.3333H5.66666ZM5.66666 2.5V1.66667C5.66666 0.746192 6.41286 0 7.33333 0H10.6667C11.5871 0 12.3333 0.746192 12.3333 1.66667V2.5H15.6667C16.5871 2.5 17.3333 3.24619 17.3333 4.16667V13.3333C17.3333 14.2538 16.5871 15 15.6667 15H2.33333C1.41286 15 0.666664 14.2538 0.666664 13.3333V4.16667C0.666664 3.24619 1.41286 2.5 2.33333 2.5H5.66666ZM8.16666 10H2.33333V13.3333H15.6667V10H9.83333V10.8333H8.16666V10ZM10.6667 2.5V1.66667H7.33333V2.5H10.6667Z"
+                              fill="#CDD3DB"/>
+                        </svg>
+                                                        </span>
+                                </div>
+                                <select class="form-control border-0" id="industry" aria-label="Industry"
+                                        aria-describedby="basic-addon4">
+                                    <option value="sales">Sales</option>
+                                    <option value="sales">Lorem</option>
+                                    <option value="sales">Lorem1</option>
+                                    <option value="sales">Lorem2</option>
+                                    <option value="sales">Lorem3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer border-0 px-0">
+                            <button class="btn btn-demo w-100 border-0 m-0">
+                                Arrange a demo
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon icon-burger">
+            <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 1.26316C0 0.565535 0.565535 0 1.26316 0H23.7368C24.4345 0 25 0.565535 25 1.26316C25 1.96078 24.4345 2.52632 23.7368 2.52632H1.26316C0.565534 2.52632 0 1.96078 0 1.26316ZM0 14.7368C0 14.0392 0.565535 13.4737 1.26316 13.4737H23.7368C24.4345 13.4737 25 14.0392 25 14.7368C25 15.4345 24.4345 16 23.7368 16H1.26316C0.565534 16 0 15.4345 0 14.7368ZM1.26316 6.73685C0.565535 6.73685 0 7.30238 0 8C0 8.69763 0.565534 9.26316 1.26316 9.26316H23.7368C24.4345 9.26316 25 8.69763 25 8C25 7.30238 24.4345 6.73685 23.7368 6.73685H1.26316Z"
+                      fill="#252A32"/>
+            </svg>
+        </span>
+            <span class="navbar-toggler-icon icon-close">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M2.38921 0.36997C1.89591 -0.123324 1.09613 -0.123323 0.602833 0.36997C0.10954 0.863264 0.109539 1.66305 0.602832 2.15634L7.53888 9.0924L0.36997 16.2613C-0.123324 16.7546 -0.123323 17.5544 0.36997 18.0477C0.863264 18.541 1.66305 18.541 2.15634 18.0477L9.32526 10.8788L16.4941 18.0476C16.9874 18.5409 17.7872 18.5409 18.2805 18.0476C18.7738 17.5543 18.7738 16.7546 18.2805 16.2613L11.1116 9.0924L18.0476 2.15639C18.5409 1.6631 18.5409 0.863311 18.0476 0.370017C17.5543 -0.123276 16.7546 -0.123277 16.2613 0.370016L9.32526 7.30602L2.38921 0.36997Z"
+                      fill="#252A32"/>
+            </svg>
+        </span>
+        </button>
+
+        <div class="d-none d-md-block w-100">
+            <ul class="navbar-nav justify-content-around align-items-center w-100">
+                <li class="nav-item active">
+                    <a class="nav-link text-uppercase" href="#">Industries we serve <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item text-uppercase">
+                    <!-- Button trigger modal -->
+                    <a role="button" class="nav-link" data-toggle="modal" data-target="#modulesModal">
+                        Launch demo modal
+                        <span class="ml-2">
+                        <svg width="14px" height="10px" viewBox="0 0 16 16" class="bi bi-caret-down-fill"
+                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </span>
+                    </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modulesModal" tabindex="-1" role="dialog"
+                         aria-labelledby="modulesModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="container-fluid px-0">
+                                    <div class="row mx-0 w-100">
+                                        <div class="col-4 px-0">
+                                            <a href="#" class="text-decoration-none">
+                                                <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
+                                                    <img src="assets/images/cup.webp" alt="cup">
+                                                </div>
+                                                <div class="modal-body text-uppercase p-0 text-center">
+                                                    sale
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-4 px-0">
+                                            <a href="#" class="text-decoration-none">
+                                                <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
+                                                    <img src="assets/images/cards.webp" alt="cards">
+                                                </div>
+                                                <div class="modal-body text-uppercase p-0 text-center">
+                                                    CRM
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-4 px-0">
+                                            <a href="#" class="text-decoration-none">
+                                                <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
+                                                    <img src="assets/images/rocket.webp" alt="rocket">
+                                                </div>
+                                                <div class="modal-body text-uppercase p-0 text-center">
+                                                    Project
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-4 px-0">
+                                            <a href="#" class="text-decoration-none">
+                                                <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
+                                                    <img src="assets/images/calendar.webp" alt="calendar">
+                                                </div>
+                                                <div class="modal-body text-uppercase p-0 text-center">
+                                                    Scheduler
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-4 px-0">
+                                            <a href="#" class="text-decoration-none">
+                                                <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
+                                                    <img src="assets/images/clock.webp" alt="clock">
+                                                </div>
+                                                <div class="modal-body text-uppercase p-0 text-center">
+                                                    Time Sheets
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-4 px-0">
+                                            <a href="#" class="text-decoration-none">
+                                                <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
+                                                    <img src="assets/images/grid.webp" alt="grid">
+                                                </div>
+                                                <div class="modal-body text-uppercase p-0 text-center">
+                                                    Dashboard
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#"> Resources</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                    <button type="button" class="btn btn-demo border-0" data-toggle="modal" data-target="#demoModal">
+                        Arrange a demo
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="collapse navbar-collapse d-md-none bg-white" id="navbarSupportedContent">
+        <ul class="navbar-nav justify-content-around align-items-center w-100">
+            <li class="nav-item active">
+                <a class="nav-link text-uppercase" href="#">Industries we serve <span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item text-uppercase">
+                <a role="button" class="nav-link" data-toggle="modal" data-target="#modulesModal">
+                    Modules and features
+                </a>
+                <div class="container-fluid px-0">
+                    <div class="row mx-0 w-100">
+                        <div class="col-4 px-0">
+                            <a href="#" class="text-decoration-none text-decoration-none">
+                                <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
+                                    <img src="assets/images/cup.webp" alt="cup">
+                                </div>
+                                <div class="modal-body text-uppercase p-0 text-center">
+                                    sale
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4 px-0">
+                            <a href="#" class="text-decoration-none text-decoration-none">
+                                <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
+                                    <img src="assets/images/cards.webp" alt="cards">
+                                </div>
+                                <div class="modal-body text-uppercase p-0 text-center">
+                                    CRM
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4 px-0">
+                            <a href="#" class="text-decoration-none text-decoration-none">
+                                <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
+                                    <img src="assets/images/rocket.webp" alt="rocket">
+                                </div>
+                                <div class="modal-body text-uppercase p-0 text-center">
+                                    Project
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4 px-0">
+                            <a href="#" class="text-decoration-none text-decoration-none">
+                                <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
+                                    <img src="assets/images/calendar.webp" alt="calendar">
+                                </div>
+                                <div class="modal-body text-uppercase p-0 text-center">
+                                    Scheduler
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4 px-0">
+                            <a href="#" class="text-decoration-none text-decoration-none">
+                                <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
+                                    <img src="assets/images/clock.webp" alt="clock">
+                                </div>
+                                <div class="modal-body text-uppercase p-0 text-center">
+                                    Time Sheets
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4 px-0">
+                            <a href="#" class="text-decoration-none text-decoration-none">
+                                <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
+                                    <img src="assets/images/grid.webp" alt="grid">
+                                </div>
+                                <div class="modal-body text-uppercase p-0 text-center">
+                                    Dashboard
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#"> Resources</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<div class="container-fluid">
+    <div class="section-1 row">
+        <div class="col-12 col-md-6 col-lg-5">
+            <h2 class="title text-uppercase">
+                The operating system <br> for services business
+            </h2>
+            <p class="section-text">
+                Et nibh dignissim pellentesque interdum porta. Risus condimentum massa malesuada semper lacinia.
+                Risus
+                blandit tempor ullamcorper mauris.
+            </p>
+            <button type="button" class="btn btn-demo border-0 d-none d-md-block" data-toggle="modal"
+                    data-target="#demoModal">
+                Arrange a demo
+            </button>
+        </div>
+        <div class="col-12 col-md-6 col-lg-7">
+            <img src="assets/images/section-1.webp" alt="ection-1" class="img-fluid">
+        </div>
+        <div class="col-12">
+            <button type="button" class="btn btn-demo border-0 d-block d-md-none w-100" data-toggle="modal"
+                    data-target="#demoModal">
+                Arrange a demo
+            </button>
+        </div>
+    </div>
+    <div class="section-2 row">
+        <div class="col-12">
+            <h2 class="title text-uppercase text-center">
+                Industries we serve
+            </h2>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="media">
+                <img src="assets/images/rocket.webp" class="align-self-center mr-3" alt="rocket">
+                <div class="media-body">
+                    <p class="mb-0">Project management</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="media">
+                <img src="assets/images/flag.webp" class="align-self-center mr-3" alt="flag">
+                <div class="media-body">
+                    <p class="mb-0">Software development</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="media">
+                <img src="assets/images/cup.webp" class="align-self-center mr-3" alt="cup">
+                <div class="media-body">
+                    <p class="mb-0">Risus condimentum</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="media">
+                <img src="assets/images/marker.webp" class="align-self-center mr-3" alt="marker">
+                <div class="media-body">
+                    <p class="mb-0">Sales</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="media">
+                <img src="assets/images/alert.webp" class="align-self-center mr-3" alt="alert">
+                <div class="media-body">
+                    <p class="mb-0">Project management</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="media">
+                <img src="assets/images/check.webp" class="align-self-center mr-3" alt="check">
+                <div class="media-body">
+                    <p class="mb-0">Project management</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="media">
+                <img src="assets/images/lightning.webp" class="align-self-center mr-3" alt="lightning">
+                <div class="media-body">
+                    <p class="mb-0">Project management</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="media">
+                <img src="assets/images/play.webp" class="align-self-center mr-3" alt="play">
+                <div class="media-body">
+                    <p class="mb-0">Project management</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-3 row">
+        <div class="col-12">
+            <h2 class="title text-uppercase text-center">
+                Modules and features
+            </h2>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5">
+            <h2 class="title text-uppercase">
+                Perfect tool for sales
+            </h2>
+            <div class="d-block d-md-none">
+                <img src="assets/images/section-3.webp" alt="sales images" class="img-fluid">
+            </div>
+            <p class="section-text text-left">
+                Et nibh dignissim pellentesque interdum porta. Risus condimentum massa malesuada semper lacinia. Risus
+                blandit tempor ullamcorper mauris. Sagittis leo enim viverra sit metus tincidunt nisi, adipiscing enim.
+                Sit sit erat scelerisque facilisi phasellus.
+            </p>
+            <ul class="list">
+                <li class="section-text mb-2 list-item text-left">
+                    Et nibh dignissim pellentesque interdum porta.
+                </li>
+                <li class="section-text mb-2 list-item text-left">
+                    Sagittis leo enim viverra sit metus tincidunt nisi, adipiscing enim.
+                </li>
+                <li class="section-text mb-2 list-item text-left">
+                    Sit sit erat scelerisque facilisi phasellus.
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6 col-lg-7 d-none d-md-block">
+            <img src="assets/images/section-3.webp" alt="sales images" class="img-fluid">
+        </div>
+    </div>
+    <div class="section-4 row">
+        <div class="col-12 col-md-6 col-lg-5 order-md-2">
+            <h2 class="title text-uppercase">
+                An intuitive CRM system
+            </h2>
+            <div class="d-md-none">
+                <img src="assets/images/section-4.webp" alt="Image CRM" class="img-fluid">
+            </div>
+            <p class="section-text text-left mb-0">
+                Et nibh dignissim pellentesque interdum porta. Risus condimentum massa malesuada semper lacinia. Risus
+                blandit tempor ullamcorper mauris. Sagittis leo enim viverra sit metus tincidunt nisi, adipiscing enim.
+                Sit sit erat scelerisque facilisi phasellus.
+            </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-7 d-none d-md-block order-md-1">
+            <img src="assets/images/section-4.webp" alt="Image CRM" class="img-fluid">
+        </div>
+    </div>
+    <div class="section-5 row">
+        <div class="col-12 col-md-6 col-lg-5">
+            <h2 class="title text-uppercase">
+                Full control over your projects
+            </h2>
+            <div class="d-block d-md-none">
+                <img src="assets/images/section-3.webp" alt="sales images" class="img-fluid">
+            </div>
+            <p class="section-text text-left">
+                Et nibh dignissim pellentesque interdum porta. Risus condimentum massa malesuada semper lacinia. Risus
+                blandit tempor ullamcorper mauris.</p>
+            <p class="section-text text-left">
+                Sagittis leo enim viverra sit metus tincidunt nisi, adipiscing enim. Sit sit erat scelerisque facilisi
+                phasellus.
+            </p>
+        </div>
+        <div class="col-md-6 col-lg-7 d-none d-md-block">
+            <img src="assets/images/section-3.webp" alt="sales images" class="img-fluid">
+        </div>
+    </div>
+    <div class="section-6 row">
+        <div class="col-md-12 col-lg-10 col-xl-12 d-none d-md-flex">
+            <div>
+                <img src="assets/images/image-tomorrow.webp" alt="image-tomorrow" class="img-fluid">
+            </div>
+            <div>
+                <img src="assets/images/image-leave.webp" alt="image-leave" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-md-6 d-none d-md-block">
+            <img src="assets/images/image-container.webp" alt="/image-container" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-6">
+            <h2 class="title text-uppercase">
+                Full control over your projects
+            </h2>
+            <div class="d-block d-md-none">
+                <img src="assets/images/section-6.webp" alt="sales images" class="img-fluid">
+            </div>
+            <p class="section-text text-left">
+                Et nibh dignissim pellentesque interdum porta. Risus condimentum massa malesuada semper lacinia. Risus
+                blandit tempor ullamcorper mauris.</p>
+            <p class="section-text text-left">
+                Sagittis leo enim viverra sit metus tincidunt nisi, adipiscing enim. Sit sit erat scelerisque facilisi
+                phasellus.
+            </p>
+        </div>
+    </div>
+    <div class="section-7 row">
+        <div class="col-12 col-md-6 col-lg-5">
+            <h2 class="title text-uppercase">
+                Time planning tools
+            </h2>
+            <div class="d-block d-md-none">
+                <img src="assets/images/time-sheets2-mobile.webp" alt="time sheets" class="img-fluid">
+            </div>
+            <p class="section-text text-left">
+                Et nibh dignissim pellentesque interdum porta. Risus condimentum massa malesuada semper lacinia. Risus
+                blandit tempor ullamcorper mauris. Sagittis leo enim viverra sit metus tincidunt nisi, adipiscing enim.
+                Sit sit erat scelerisque facilisi phasellus.</p>
+        </div>
+        <div class="col-md-6 col-lg-7 d-none d-md-block">
+            <img src="assets/images/time-sheets.webp" alt="time sheets" class="img-fluid">
+        </div>
+    </div>
+    <div class="section-8 row">
+        <div class="col-12 col-md-6 col-lg-5 order-md-2">
+            <h2 class="title text-uppercase">
+                at-a-glance views of key indicators
+            </h2>
+            <div class="d-md-none dashboard-image">
+                <img src="assets/images/dashboard-image.webp" alt="dashboard" class="img-fluid">
+            </div>
+            <p class="section-text text-left">
+                Et nibh dignissim pellentesque interdum porta. Risus condimentum massa malesuada semper lacinia. Risus
+                blandit tempor ullamcorper mauris.
+            </p>
+            <p class="section-text text-left mb-0">
+                Sagittis leo enim viverra sit metus tincidunt nisi, adipiscing enim. Sit sit erat scelerisque facilisi
+                phasellus.
+            </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-7 d-none d-md-block order-md-1">
+            <img src="assets/images/dashboard-image.webp" alt="dashboard" class="img-fluid">
+        </div>
+    </div>
+    <div class="section-9 row">
+        <div class="col-12">
+            <h2 class="title text-uppercase text-center">
+                integrations
+            </h2>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center flex-wrap mb-3 mb-lg-5">
+            <img src="assets/images/item-text.webp" alt="item-text" class="img-fluid mr-md-3">
+            <p class="mb-0 font-weight-bolder">Txt / SMS</p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center flex-wrap mb-3 mb-lg-5">
+            <img src="assets/images/item-email.webp" alt="item-email" class="img-fluid mr-md-3">
+            <p class="mb-0 font-weight-bolder">Email</p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center flex-wrap mb-3 mb-lg-5">
+            <img src="assets/images/item-calendar.webp" alt="item-calendar" class="img-fluid mr-md-3">
+            <p class="mb-0 font-weight-bolder">Calendar</p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center justify-content-lg-end flex-wrap mb-3 mb-lg-5 mt-lg-5">
+            <img src="assets/images/item-xero.webp" alt="item-xero" class="img-fluid mr-md-3">
+            <p class="mb-0 font-weight-bolder">Xero</p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center justify-content-lg-end flex-wrap mb-3 mb-lg-5 mt-lg-5">
+            <img src="assets/images/item-slack.webp" alt="item-slack" class="img-fluid mr-md-3">
+            <p class="mb-0 font-weight-bolder">Slack</p>
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center justify-content-lg-end flex-wrap mb-3 mb-lg-5 mt-lg-5">
+            <img src="assets/images/item-github.webp" alt="item-github" class="img-fluid mr-md-3">
+            <p class="mb-0 font-weight-bolder">GitHub</p>
+        </div>
+    </div>
+    <div class="section-10">
+        <div class="bg-gray row mx-0">
+            <div class="col-12 col-md-6 col-lg-7 order-2 order-md-1">
+                <h2 class="title text-uppercase">
+                    Arrange a demo
+                </h2>
+                <p class="section-text">
+                    Et nibh dignissim pellentesque interdum porta. Risus condimentum massa malesuada semper lacinia.
+                    Risus blandit tempor ullamcorper mauris.
+                </p>
+                <button type="button" class="btn btn-demo border-0 text-uppercase">
+                    get started
+                </button>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 order-1 order-md-2">
+                <img src="assets/images/section-10-image.webp" alt="pages" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="section-11">
+        <h2 class="title text-uppercase text-center">
+            Resources
+        </h2>
+        <div class="card-deck justify-content-center">
+            <div class="card border-0">
+                <div class="card-header p-0 border-0">
+                    <img src="assets/images/laptop.webp" class="card-img-top img-fluid" alt="laptop">
+                </div>
+                <div class="card-body px-0">
+                    <h5 class="card-title">How McChrystal Group increased revenue by 60% </h5>
+                    <p class="card-text">Et nibh dignissim pellentesque interdum porta. Risus condimentum massa
+                        malesuada semper lacinia. Risus blandit</p>
+                </div>
+                <div class="card-footer border-0 bg-white px-0">
+                    <a href="#" class="card-link text-uppercase">
+                        Read more
+                    </a>
+                </div>
+            </div>
+            <div class="card border-0">
+                <div class="card-header p-0 border-0">
+                    <img src="assets/images/woman.webp" class="card-img-top img-fluid" alt="woman">
+                </div>
+                <div class="card-body px-0">
+                    <h5 class="card-title">How to keep track of your sales pipeline </h5>
+                    <p class="card-text">Et nibh dignissim pellentesque interdum porta. Risus condimentum massa
+                        malesuada semper lacinia. Risus blandit</p>
+                </div>
+                <div class="card-footer border-0 bg-white px-0">
+                    <a href="#" class="card-link text-uppercase">
+                        Read more
+                    </a>
+                </div>
+            </div>
+            <div class="card border-0">
+                <div class="card-header p-0 border-0">
+                    <img src="assets/images/note.webp" class="card-img-top img-fluid" alt="note">
+                </div>
+                <div class="card-body px-0">
+                    <h5 class="card-title">How to manage different organisations in one platform</h5>
+                    <p class="card-text">Et nibh dignissim pellentesque interdum porta. Risus condimentum massa
+                        malesuada semper lacinia. Risus blandit</p>
+                </div>
+                <div class="card-footer border-0 bg-white px-0">
+                    <a href="#" class="card-link text-uppercase">
+                        Read more
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="btn-demo-outline mx-auto">
+            <button type="button" class="btn btn-demo">
+                more articles
+                <span class="ml-3">
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.99125 6.12498H0.875V4.87498H9.99125L6.05813 0.941855L6.94187 0.0581055L12.3837 5.49998L6.94187 10.9419L6.05813 10.0581L9.99125 6.12498Z" fill="url(#paint0_linear)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="12.3837" y1="5.49998" x2="0.875" y2="5.49998" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FA126C"/>
+<stop offset="1" stop-color="#FF9F4B"/>
+</linearGradient>
+</defs>
+</svg>
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+<footer class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md d-flex justify-content-between flex-column align-items-start">
+            <img class="logo img-fluid" src="assets/images/logo.webp" alt="logo">
+            <small class="d-none d-md-block mb-3 text-muted">© 2020. All Rights Reserved.</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5 class="footer-title">Modules and features</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted text-decoration-none footer-link" href="#">Sales</a></li>
+                <li><a class="text-muted text-decoration-none footer-link" href="#">CRM</a></li>
+                <li><a class="text-muted text-decoration-none footer-link" href="#">Projects / Jobs</a></li>
+                <li><a class="text-muted text-decoration-none footer-link" href="#">Scheduler</a></li>
+                <li><a class="text-muted text-decoration-none footer-link" href="#">Timesheets</a></li>
+                <li><a class="text-muted text-decoration-none footer-link" href="#">Dashboard</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md d-flex justify-content-between flex-column">
+            <h5 class="footer-title">Information</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted text-decoration-none footer-link" href="#">Industries we serve</a></li>
+                <li><a class="text-muted text-decoration-none footer-link" href="#">Resources</a></li>
+            </ul>
+            <h5 class="footer-title">Contacts</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted text-decoration-none footer-link" href="tel:(603) 555-0123">(603) 555-0123</a></li>
+                <li><a class="text-muted text-decoration-none footer-link" href="tel:(603) 555-0123">(603) 555-0123</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5 class="footer-title">Social Media</h5>
+            <div class="mt-3">
+                <a href="#" class="social-link mr-2">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link mx-2">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link ml-2">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 mt-4">
+            <small class="d-block d-md-none mb-3 text-muted">© 2020. All Rights Reserved.</small>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
