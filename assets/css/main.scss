@@ -341,7 +341,7 @@
 }
 
 .navbar-collapse {
-  background-image: url(../images/nav-mobile-background.webp);
+  background-image: url(../images/nav-mobile-background.png);
   background-repeat: no-repeat;
   background-position: left bottom;
   box-shadow: 0 3px 20px rgba(37, 42, 50, 0.05);
@@ -454,7 +454,7 @@
 
   div:nth-child(2) {
     padding-top: 130px;
-    background-image: url(../images/background-section-1.webp);
+    background-image: url(../images/background-section-1.png);
     background-repeat: no-repeat;
     background-position: right;
     -webkit-background-size: cover;
@@ -552,7 +552,7 @@
 
       &:before {
         content: '';
-        background-image: url(../images/sales-title.webp);
+        background-image: url(../images/sales-title.png);
         -webkit-background-size: contain;
         background-size: contain;
         background-repeat: no-repeat;
@@ -610,7 +610,7 @@
 
     &:before {
       content: '';
-      background-image: url(../images/crm.webp);
+      background-image: url(../images/crm.png);
       -webkit-background-size: contain;
       background-size: contain;
       background-repeat: no-repeat;
@@ -677,7 +677,7 @@
 
       &:before {
         content: '';
-        background-image: url(../images/projects.webp);
+        background-image: url(../images/projects.png);
         -webkit-background-size: contain;
         background-size: contain;
         background-repeat: no-repeat;
@@ -728,7 +728,7 @@
 
       &:before {
         content: '';
-        background-image: url(../images/scheduler.webp);
+        background-image: url(../images/scheduler.png);
         -webkit-background-size: contain;
         background-size: contain;
         background-repeat: no-repeat;
@@ -796,7 +796,7 @@
 
       &:before {
         content: '';
-        background-image: url(../images/timesheets.webp);
+        background-image: url(../images/timesheets.png);
         -webkit-background-size: contain;
         background-size: contain;
         background-repeat: no-repeat;
@@ -831,7 +831,7 @@
   }
 
   div:last-child {
-    background-image: url(../images/section-7-background.webp);
+    background-image: url(../images/section-7-background.png);
     background-repeat: no-repeat;
     background-position: right;
     -webkit-background-size: cover;
@@ -861,7 +861,7 @@
 
       &:before {
         content: '';
-        background-image: url(../images/dashboard.webp);
+        background-image: url(../images/dashboard.png);
         -webkit-background-size: contain;
         background-size: contain;
         background-repeat: no-repeat;
@@ -896,7 +896,7 @@
   }
 
   div:last-child, .dashboard-image {
-    background-image: url(../images/section-8-background.webp);
+    background-image: url(../images/section-8-background.png);
     background-repeat: no-repeat;
     background-position: right;
     -webkit-background-size: cover;
@@ -963,7 +963,7 @@
 
         &:before {
           content: '';
-          background-image: url(../images/demo.webp);
+          background-image: url(../images/demo.png);
           -webkit-background-size: contain;
           background-size: contain;
           background-repeat: no-repeat;
