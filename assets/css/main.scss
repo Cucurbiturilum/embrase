@@ -1,3 +1,5 @@
+@import 'animation.css';
+
 .modal-backdrop {
   z-index: 2 !important;
 }
@@ -1029,42 +1031,47 @@
   }
 }
 
-.section-11{
-  .card-deck{
+.section-11 {
+  .card-deck {
     flex-wrap: nowrap;
-    .card{
+
+    .card {
       max-width: 300px;
       flex: initial;
       margin: 0 15px 50px 15px;
 
-      @media (max-width: 520px){
+      @media (max-width: 520px) {
         margin: auto;
         margin-bottom: 50px;
       }
-      .card-header{
+
+      .card-header {
         background: #fff;
-       .img-fluid{
-         border-radius: 10px;
-       }
+
+        .img-fluid {
+          border-radius: 10px;
+        }
       }
-      .card-body{
-        .card-title{
+
+      .card-body {
+        .card-title {
           font-size: 16px;
           line-height: 24px;
           letter-spacing: 0.05em;
           color: #052649;
           font-weight: 700;
         }
-       .card-text{
-         font-size: 16px;
-         line-height: 150%;
-         letter-spacing: 0.5px;
-         color: #697D92;
-       }
+
+        .card-text {
+          font-size: 16px;
+          line-height: 150%;
+          letter-spacing: 0.5px;
+          color: #697D92;
+        }
       }
 
-      .card-footer{
-        .card-link{
+      .card-footer {
+        .card-link {
           font-weight: 500;
           font-size: 14px;
           line-height: 150%;
@@ -1075,10 +1082,11 @@
     }
   }
 
-  .btn-demo-outline{
+  .btn-demo-outline {
     width: 200px;
     height: 45px;
-    .btn-demo{
+
+    .btn-demo {
       height: 43px;
       width: 198px;
       font-size: 14px;
@@ -1086,24 +1094,24 @@
   }
 }
 
-footer{
+footer {
   background: #F3F7FB;
   color: #052649;
-  padding: 50px 20px!important;
+  padding: 50px 20px !important;
 
   @media (min-width: 990px) and (max-width: 1200px) {
-    padding: 50px!important;
+    padding: 50px !important;
   }
 
   @media (min-width: 1200px) {
-    padding: 90px 100px 50px 100px!important;
+    padding: 90px 100px 50px 100px !important;
   }
 
-  .logo{
+  .logo {
     margin-bottom: 40px;
   }
 
-  .footer-title{
+  .footer-title {
     font-weight: bold;
     font-size: 14px;
     line-height: 150%;
@@ -1113,14 +1121,14 @@ footer{
     margin-bottom: 7px;
   }
 
-  .footer-link{
+  .footer-link {
     font-size: 14px;
     line-height: 150%;
     letter-spacing: 0.5px;
     color: #697D92;
   }
 
-  .social-link{
+  .social-link {
     width: 30px;
     height: 30px;
     border-radius: 50%;

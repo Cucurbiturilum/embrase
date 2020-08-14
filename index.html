@@ -11,6 +11,7 @@
           rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
           integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -21,6 +22,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
             crossorigin="anonymous"></script>
+    <script src="assets/js/scroll.min.js"></script>
     <script src="assets/js/app.js"></script>
 </head>
 <body>
@@ -154,13 +156,13 @@
         <div class="d-none d-md-block w-100">
             <ul class="navbar-nav justify-content-around align-items-center w-100">
                 <li class="nav-item active">
-                    <a class="nav-link text-uppercase" href="#">Industries we serve <span
+                    <a class="nav-link text-uppercase" href="#industries">Industries we serve <span
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item text-uppercase">
                     <!-- Button trigger modal -->
                     <a role="button" class="nav-link" data-toggle="modal" data-target="#modulesModal">
-                        Launch demo modal
+                        Modules and features
                         <span class="ml-2">
                         <svg width="14px" height="10px" viewBox="0 0 16 16" class="bi bi-caret-down-fill"
                              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -177,7 +179,8 @@
                                 <div class="container-fluid px-0">
                                     <div class="row mx-0 w-100">
                                         <div class="col-4 px-0">
-                                            <a href="#" class="text-decoration-none">
+                                            <a href="#sale" class="text-decoration-none"
+                                               onclick="$('#modulesModal').modal('hide')">
                                                 <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
                                                     <img src="assets/images/cup.png" alt="cup">
                                                 </div>
@@ -187,7 +190,8 @@
                                             </a>
                                         </div>
                                         <div class="col-4 px-0">
-                                            <a href="#" class="text-decoration-none">
+                                            <a href="#crm" class="text-decoration-none"
+                                               onclick="$('#modulesModal').modal('hide')">
                                                 <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
                                                     <img src="assets/images/cards.png" alt="cards">
                                                 </div>
@@ -197,7 +201,8 @@
                                             </a>
                                         </div>
                                         <div class="col-4 px-0">
-                                            <a href="#" class="text-decoration-none">
+                                            <a href="#projects" class="text-decoration-none"
+                                               onclick="$('#modulesModal').modal('hide')">
                                                 <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
                                                     <img src="assets/images/rocket.png" alt="rocket">
                                                 </div>
@@ -207,7 +212,8 @@
                                             </a>
                                         </div>
                                         <div class="col-4 px-0">
-                                            <a href="#" class="text-decoration-none">
+                                            <a href="#scheduler" class="text-decoration-none"
+                                               onclick="$('#modulesModal').modal('hide')">
                                                 <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
                                                     <img src="assets/images/calendar.png" alt="calendar">
                                                 </div>
@@ -217,7 +223,8 @@
                                             </a>
                                         </div>
                                         <div class="col-4 px-0">
-                                            <a href="#" class="text-decoration-none">
+                                            <a href="#time" class="text-decoration-none"
+                                               onclick="$('#modulesModal').modal('hide')">
                                                 <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
                                                     <img src="assets/images/clock.png" alt="clock">
                                                 </div>
@@ -227,7 +234,8 @@
                                             </a>
                                         </div>
                                         <div class="col-4 px-0">
-                                            <a href="#" class="text-decoration-none">
+                                            <a href="#dashboard" class="text-decoration-none"
+                                               onclick="$('#modulesModal').modal('hide')">
                                                 <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
                                                     <img src="assets/images/grid.png" alt="grid">
                                                 </div>
@@ -243,7 +251,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#"> Resources</a>
+                    <a class="nav-link text-uppercase" href="#resources"> Resources</a>
                 </li>
                 <li class="nav-item d-none d-md-block">
                     <button type="button" class="btn btn-demo border-0" data-toggle="modal" data-target="#demoModal">
@@ -256,8 +264,7 @@
     <div class="collapse navbar-collapse d-md-none bg-white" id="navbarSupportedContent">
         <ul class="navbar-nav justify-content-around align-items-center w-100">
             <li class="nav-item active">
-                <a class="nav-link text-uppercase" href="#">Industries we serve <span
-                        class="sr-only">(current)</span></a>
+                <a class="nav-link text-uppercase" href="#industries">Industries we serve</a>
             </li>
             <li class="nav-item text-uppercase">
                 <a role="button" class="nav-link" data-toggle="modal" data-target="#modulesModal">
@@ -266,7 +273,7 @@
                 <div class="container-fluid px-0">
                     <div class="row mx-0 w-100">
                         <div class="col-4 px-0">
-                            <a href="#" class="text-decoration-none text-decoration-none">
+                            <a href="#sale" class="mobile-nav-link text-decoration-none text-decoration-none">
                                 <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
                                     <img src="assets/images/cup.png" alt="cup">
                                 </div>
@@ -276,7 +283,7 @@
                             </a>
                         </div>
                         <div class="col-4 px-0">
-                            <a href="#" class="text-decoration-none text-decoration-none">
+                            <a href="#crm" class="mobile-nav-link text-decoration-none text-decoration-none">
                                 <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
                                     <img src="assets/images/cards.png" alt="cards">
                                 </div>
@@ -286,7 +293,7 @@
                             </a>
                         </div>
                         <div class="col-4 px-0">
-                            <a href="#" class="text-decoration-none text-decoration-none">
+                            <a href="#projects" class="mobile-nav-link text-decoration-none text-decoration-none">
                                 <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
                                     <img src="assets/images/rocket.png" alt="rocket">
                                 </div>
@@ -296,7 +303,7 @@
                             </a>
                         </div>
                         <div class="col-4 px-0">
-                            <a href="#" class="text-decoration-none text-decoration-none">
+                            <a href="#scheduler" class="mobile-nav-link text-decoration-none text-decoration-none">
                                 <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
                                     <img src="assets/images/calendar.png" alt="calendar">
                                 </div>
@@ -306,7 +313,7 @@
                             </a>
                         </div>
                         <div class="col-4 px-0">
-                            <a href="#" class="text-decoration-none text-decoration-none">
+                            <a href="#time" class="mobile-nav-link text-decoration-none text-decoration-none">
                                 <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
                                     <img src="assets/images/clock.png" alt="clock">
                                 </div>
@@ -316,7 +323,7 @@
                             </a>
                         </div>
                         <div class="col-4 px-0">
-                            <a href="#" class="text-decoration-none text-decoration-none">
+                            <a href="#dashboard" class="mobile-nav-link text-decoration-none text-decoration-none">
                                 <div class="modal-header border-0 p-0 d-flex justify-content-center align-items-center">
                                     <img src="assets/images/grid.png" alt="grid">
                                 </div>
@@ -329,7 +336,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-uppercase" href="#"> Resources</a>
+                <a class="nav-link text-uppercase" href="#resources">Resources</a>
             </li>
         </ul>
     </div>
@@ -337,21 +344,23 @@
 <div class="container-fluid">
     <div class="section-1 row">
         <div class="col-12 col-md-6 col-lg-5">
-            <h2 class="title text-uppercase">
+            <h2 class="title text-uppercase" data-aos="pixFadeUp" data-aos-duration="1000">
                 The operating system <br> for services business
             </h2>
-            <p class="section-text">
+            <p class="section-text" data-aos="pixFadeUp" data-aos-duration="1200">
                 Et nibh dignissim pellentesque interdum porta. Risus condimentum massa malesuada semper lacinia.
                 Risus
                 blandit tempor ullamcorper mauris.
             </p>
-            <button type="button" class="btn btn-demo border-0 d-none d-md-block" data-toggle="modal"
+            <button type="button" class="btn btn-demo border-0 d-none d-md-block" data-aos="InX"
+                    data-aos-duration="1200"  data-toggle="modal"
                     data-target="#demoModal">
                 Arrange a demo
             </button>
         </div>
         <div class="col-12 col-md-6 col-lg-7">
-            <img src="assets/images/section-1.png" alt="ection-1" class="img-fluid">
+            <img src="assets/images/section-1.png" alt="section-1" class="img-fluid section-1-img" data-aos="pixFadeLeft"
+                 data-aos-duration="1500">
         </div>
         <div class="col-12">
             <button type="button" class="btn btn-demo border-0 d-block d-md-none w-100" data-toggle="modal"
@@ -360,14 +369,14 @@
             </button>
         </div>
     </div>
-    <div class="section-2 row">
+    <div class="section-2 row" id="industries">
         <div class="col-12">
-            <h2 class="title text-uppercase text-center">
+            <h2 class="title text-uppercase text-center" data-aos="pixFadeUp" data-aos-duration="1000">
                 Industries we serve
             </h2>
         </div>
         <div class="col-6 col-md-3">
-            <div class="media">
+            <div class="media" data-aos="pixFadeUp" data-aos-duration="500">
                 <img src="assets/images/rocket.png" class="align-self-center mr-3" alt="rocket">
                 <div class="media-body">
                     <p class="mb-0">Project management</p>
@@ -375,7 +384,7 @@
             </div>
         </div>
         <div class="col-6 col-md-3">
-            <div class="media">
+            <div class="media" data-aos="pixFadeUp" data-aos-duration="700">
                 <img src="assets/images/flag.png" class="align-self-center mr-3" alt="flag">
                 <div class="media-body">
                     <p class="mb-0">Software development</p>
@@ -383,7 +392,7 @@
             </div>
         </div>
         <div class="col-6 col-md-3">
-            <div class="media">
+            <div class="media" data-aos="pixFadeUp" data-aos-duration="900">
                 <img src="assets/images/cup.png" class="align-self-center mr-3" alt="cup">
                 <div class="media-body">
                     <p class="mb-0">Risus condimentum</p>
@@ -391,7 +400,7 @@
             </div>
         </div>
         <div class="col-6 col-md-3">
-            <div class="media">
+            <div class="media" data-aos="pixFadeUp" data-aos-duration="1100">
                 <img src="assets/images/marker.png" class="align-self-center mr-3" alt="marker">
                 <div class="media-body">
                     <p class="mb-0">Sales</p>
@@ -399,7 +408,7 @@
             </div>
         </div>
         <div class="col-6 col-md-3">
-            <div class="media">
+            <div class="media" data-aos="pixFadeUp" data-aos-duration="1200">
                 <img src="assets/images/alert.png" class="align-self-center mr-3" alt="alert">
                 <div class="media-body">
                     <p class="mb-0">Project management</p>
@@ -407,7 +416,7 @@
             </div>
         </div>
         <div class="col-6 col-md-3">
-            <div class="media">
+            <div class="media" data-aos="pixFadeUp" data-aos-duration="1400">
                 <img src="assets/images/check.png" class="align-self-center mr-3" alt="check">
                 <div class="media-body">
                     <p class="mb-0">Project management</p>
@@ -415,7 +424,7 @@
             </div>
         </div>
         <div class="col-6 col-md-3">
-            <div class="media">
+            <div class="media" data-aos="pixFadeUp" data-aos-duration="1600">
                 <img src="assets/images/lightning.png" class="align-self-center mr-3" alt="lightning">
                 <div class="media-body">
                     <p class="mb-0">Project management</p>
@@ -423,7 +432,7 @@
             </div>
         </div>
         <div class="col-6 col-md-3">
-            <div class="media">
+            <div class="media" data-aos="pixFadeUp" data-aos-duration="1800">
                 <img src="assets/images/play.png" class="align-self-center mr-3" alt="play">
                 <div class="media-body">
                     <p class="mb-0">Project management</p>
@@ -431,171 +440,171 @@
             </div>
         </div>
     </div>
-    <div class="section-3 row">
+    <div class="section-3 row" id="sale">
         <div class="col-12">
-            <h2 class="title text-uppercase text-center">
+            <h2 class="title text-uppercase text-center" data-aos="pixFadeUp" data-aos-duration="1000">
                 Modules and features
             </h2>
         </div>
         <div class="col-12 col-md-6 col-lg-5">
-            <h2 class="title text-uppercase">
+            <h2 class="title text-uppercase" data-aos="pixFadeUp" data-aos-duration="1000">
                 Perfect tool for sales
             </h2>
-            <div class="d-block d-md-none">
+            <div class="d-block d-md-none" data-aos="pixZoomIn" data-aos-duration="1000">
                 <img src="assets/images/section-3.png" alt="sales images" class="img-fluid">
             </div>
-            <p class="section-text text-left">
+            <p class="section-text text-left" data-aos="pixFadeUp" data-aos-duration="1200">
                 Et nibh dignissim pellentesque interdum porta. Risus condimentum massa malesuada semper lacinia. Risus
                 blandit tempor ullamcorper mauris. Sagittis leo enim viverra sit metus tincidunt nisi, adipiscing enim.
                 Sit sit erat scelerisque facilisi phasellus.
             </p>
             <ul class="list">
-                <li class="section-text mb-2 list-item text-left">
+                <li class="section-text mb-2 list-item text-left" data-aos="pixFadeRight" data-aos-duration="400">
                     Et nibh dignissim pellentesque interdum porta.
                 </li>
-                <li class="section-text mb-2 list-item text-left">
+                <li class="section-text mb-2 list-item text-left" data-aos="pixFadeRight" data-aos-duration="500">
                     Sagittis leo enim viverra sit metus tincidunt nisi, adipiscing enim.
                 </li>
-                <li class="section-text mb-2 list-item text-left">
+                <li class="section-text mb-2 list-item text-left" data-aos="pixFadeRight" data-aos-duration="600">
                     Sit sit erat scelerisque facilisi phasellus.
                 </li>
             </ul>
         </div>
         <div class="col-md-6 col-lg-7 d-none d-md-block">
-            <img src="assets/images/section-3.png" alt="sales images" class="img-fluid">
+            <img src="assets/images/section-3.png" alt="sales images" class="img-fluid" data-aos="pixZoomIn" data-aos-duration="1000">
         </div>
     </div>
-    <div class="section-4 row">
+    <div class="section-4 row" id="crm">
         <div class="col-12 col-md-6 col-lg-5 order-md-2">
-            <h2 class="title text-uppercase">
+            <h2 class="title text-uppercase" data-aos="pixFadeUp" data-aos-duration="1000">
                 An intuitive CRM system
             </h2>
             <div class="d-md-none">
-                <img src="assets/images/section-4.png" alt="Image CRM" class="img-fluid">
+                <img src="assets/images/section-4.png" alt="Image CRM" class="img-fluid" data-aos="fadeInDownBig" data-aos-duration="1000">
             </div>
-            <p class="section-text text-left mb-0">
+            <p class="section-text text-left mb-0" data-aos="pixFadeUp" data-aos-duration="1200">
                 Et nibh dignissim pellentesque interdum porta. Risus condimentum massa malesuada semper lacinia. Risus
                 blandit tempor ullamcorper mauris. Sagittis leo enim viverra sit metus tincidunt nisi, adipiscing enim.
                 Sit sit erat scelerisque facilisi phasellus.
             </p>
         </div>
         <div class="col-12 col-md-6 col-lg-7 d-none d-md-block order-md-1">
-            <img src="assets/images/section-4.png" alt="Image CRM" class="img-fluid">
+            <img src="assets/images/section-4.png" alt="Image CRM" class="img-fluid" data-aos="fadeInDownBig" data-aos-duration="1000">
         </div>
     </div>
-    <div class="section-5 row">
+    <div class="section-5 row" id="projects">
         <div class="col-12 col-md-6 col-lg-5">
-            <h2 class="title text-uppercase">
+            <h2 class="title text-uppercase" data-aos="pixFadeUp" data-aos-duration="1000">
                 Full control over your projects
             </h2>
             <div class="d-block d-md-none">
-                <img src="assets/images/section-3.png" alt="sales images" class="img-fluid">
+                <img src="assets/images/section-3.png" alt="sales images" class="img-fluid" data-aos="pixFadeUp" data-aos-duration="1100">
             </div>
-            <p class="section-text text-left">
+            <p class="section-text text-left" data-aos="pixFadeUp" data-aos-duration="1200">
                 Et nibh dignissim pellentesque interdum porta. Risus condimentum massa malesuada semper lacinia. Risus
                 blandit tempor ullamcorper mauris.</p>
-            <p class="section-text text-left">
+            <p class="section-text text-left" data-aos="pixFadeUp" data-aos-duration="1300">
                 Sagittis leo enim viverra sit metus tincidunt nisi, adipiscing enim. Sit sit erat scelerisque facilisi
                 phasellus.
             </p>
         </div>
         <div class="col-md-6 col-lg-7 d-none d-md-block">
-            <img src="assets/images/section-3.png" alt="sales images" class="img-fluid">
+            <img src="assets/images/section-3.png" alt="sales images" class="img-fluid" data-aos="pixFadeLeft" data-aos-duration="1000">
         </div>
     </div>
-    <div class="section-6 row">
+    <div class="section-6 row" id="scheduler">
         <div class="col-md-12 col-lg-10 col-xl-12 d-none d-md-flex">
             <div>
-                <img src="assets/images/image-tomorrow.png" alt="image-tomorrow" class="img-fluid">
+                <img src="assets/images/image-tomorrow.png" alt="image-tomorrow" class="img-fluid" data-aos="pixFadeRight" data-aos-duration="800">
             </div>
             <div>
-                <img src="assets/images/image-leave.png" alt="image-leave" class="img-fluid">
+                <img src="assets/images/image-leave.png" alt="image-leave" class="img-fluid" data-aos="pixFadeLeft" data-aos-duration="900">
             </div>
         </div>
         <div class="col-md-6 d-none d-md-block">
-            <img src="assets/images/image-container.png" alt="/image-container" class="img-fluid">
+            <img src="assets/images/image-container.png" alt="/image-container" class="img-fluid" data-aos="pixFadeUp" data-aos-duration="600">
         </div>
         <div class="col-12 col-md-6">
-            <h2 class="title text-uppercase">
+            <h2 class="title text-uppercase" data-aos="pixFadeUp" data-aos-duration="1000">
                 Full control over your projects
             </h2>
             <div class="d-block d-md-none">
-                <img src="assets/images/section-6.png" alt="sales images" class="img-fluid">
+                <img src="assets/images/section-6.png" alt="sales images" class="img-fluid" data-aos="pixFadeUp" data-aos-duration="1100">
             </div>
-            <p class="section-text text-left">
+            <p class="section-text text-left" data-aos="pixFadeUp" data-aos-duration="1200">
                 Et nibh dignissim pellentesque interdum porta. Risus condimentum massa malesuada semper lacinia. Risus
                 blandit tempor ullamcorper mauris.</p>
-            <p class="section-text text-left">
+            <p class="section-text text-left" data-aos="pixFadeUp" data-aos-duration="1300">
                 Sagittis leo enim viverra sit metus tincidunt nisi, adipiscing enim. Sit sit erat scelerisque facilisi
                 phasellus.
             </p>
         </div>
     </div>
-    <div class="section-7 row">
+    <div class="section-7 row" id="time">
         <div class="col-12 col-md-6 col-lg-5">
-            <h2 class="title text-uppercase">
+            <h2 class="title text-uppercase" data-aos="pixFadeUp" data-aos-duration="1000">
                 Time planning tools
             </h2>
-            <div class="d-block d-md-none">
+            <div class="d-block d-md-none" data-aos="animeZoom" data-aos-duration="1000">
                 <img src="assets/images/time-sheets2-mobile.png" alt="time sheets" class="img-fluid">
             </div>
-            <p class="section-text text-left">
+            <p class="section-text text-left" data-aos="pixFadeUp" data-aos-duration="1200">
                 Et nibh dignissim pellentesque interdum porta. Risus condimentum massa malesuada semper lacinia. Risus
                 blandit tempor ullamcorper mauris. Sagittis leo enim viverra sit metus tincidunt nisi, adipiscing enim.
                 Sit sit erat scelerisque facilisi phasellus.</p>
         </div>
         <div class="col-md-6 col-lg-7 d-none d-md-block">
-            <img src="assets/images/time-sheets.png" alt="time sheets" class="img-fluid">
+            <img src="assets/images/time-sheets.png" alt="time sheets" class="img-fluid" data-aos="animeZoom" data-aos-duration="1000">
         </div>
     </div>
-    <div class="section-8 row">
+    <div class="section-8 row" id="dashboard">
         <div class="col-12 col-md-6 col-lg-5 order-md-2">
-            <h2 class="title text-uppercase">
+            <h2 class="title text-uppercase" data-aos="pixFadeUp" data-aos-duration="1000">
                 at-a-glance views of key indicators
             </h2>
-            <div class="d-md-none dashboard-image">
+            <div class="d-md-none dashboard-image" data-aos="pixFadeLeft" data-aos-duration="1000">
                 <img src="assets/images/dashboard-image.png" alt="dashboard" class="img-fluid">
             </div>
-            <p class="section-text text-left">
+            <p class="section-text text-left" data-aos="pixFadeUp" data-aos-duration="1200">
                 Et nibh dignissim pellentesque interdum porta. Risus condimentum massa malesuada semper lacinia. Risus
                 blandit tempor ullamcorper mauris.
             </p>
-            <p class="section-text text-left mb-0">
+            <p class="section-text text-left mb-0" data-aos="pixFadeUp" data-aos-duration="1300">
                 Sagittis leo enim viverra sit metus tincidunt nisi, adipiscing enim. Sit sit erat scelerisque facilisi
                 phasellus.
             </p>
         </div>
         <div class="col-12 col-md-6 col-lg-7 d-none d-md-block order-md-1">
-            <img src="assets/images/dashboard-image.png" alt="dashboard" class="img-fluid">
+            <img src="assets/images/dashboard-image.png" alt="dashboard" class="img-fluid" data-aos="pixFadeLeft" data-aos-duration="1000">
         </div>
     </div>
     <div class="section-9 row">
         <div class="col-12">
-            <h2 class="title text-uppercase text-center">
+            <h2 class="title text-uppercase text-center" data-aos="pixFadeUp" data-aos-duration="1000">
                 integrations
             </h2>
         </div>
-        <div class="col-4 d-flex align-items-center justify-content-center flex-wrap mb-3 mb-lg-5">
+        <div class="col-4 d-flex align-items-center justify-content-center flex-wrap mb-3 mb-lg-5" data-aos="fadeInLeft" data-aos-duration="500">
             <img src="assets/images/item-text.png" alt="item-text" class="img-fluid mr-md-3">
             <p class="mb-0 font-weight-bolder">Txt / SMS</p>
         </div>
-        <div class="col-4 d-flex align-items-center justify-content-center flex-wrap mb-3 mb-lg-5">
+        <div class="col-4 d-flex align-items-center justify-content-center flex-wrap mb-3 mb-lg-5" data-aos="fadeInLeft" data-aos-duration="700">
             <img src="assets/images/item-email.png" alt="item-email" class="img-fluid mr-md-3">
             <p class="mb-0 font-weight-bolder">Email</p>
         </div>
-        <div class="col-4 d-flex align-items-center justify-content-center flex-wrap mb-3 mb-lg-5">
+        <div class="col-4 d-flex align-items-center justify-content-center flex-wrap mb-3 mb-lg-5" data-aos="fadeInLeft" data-aos-duration="900">
             <img src="assets/images/item-calendar.png" alt="item-calendar" class="img-fluid mr-md-3">
             <p class="mb-0 font-weight-bolder">Calendar</p>
         </div>
-        <div class="col-4 d-flex align-items-center justify-content-center justify-content-lg-end flex-wrap mb-3 mb-lg-5 mt-lg-5">
+        <div class="col-4 d-flex align-items-center justify-content-center justify-content-lg-end flex-wrap mb-3 mb-lg-5 mt-lg-5" data-aos="fadeInRight" data-aos-duration="500">
             <img src="assets/images/item-xero.png" alt="item-xero" class="img-fluid mr-md-3">
             <p class="mb-0 font-weight-bolder">Xero</p>
         </div>
-        <div class="col-4 d-flex align-items-center justify-content-center justify-content-lg-end flex-wrap mb-3 mb-lg-5 mt-lg-5">
+        <div class="col-4 d-flex align-items-center justify-content-center justify-content-lg-end flex-wrap mb-3 mb-lg-5 mt-lg-5" data-aos="fadeInRight" data-aos-duration="700">
             <img src="assets/images/item-slack.png" alt="item-slack" class="img-fluid mr-md-3">
             <p class="mb-0 font-weight-bolder">Slack</p>
         </div>
-        <div class="col-4 d-flex align-items-center justify-content-center justify-content-lg-end flex-wrap mb-3 mb-lg-5 mt-lg-5">
+        <div class="col-4 d-flex align-items-center justify-content-center justify-content-lg-end flex-wrap mb-3 mb-lg-5 mt-lg-5" data-aos="fadeInRight" data-aos-duration="900">
             <img src="assets/images/item-github.png" alt="item-github" class="img-fluid mr-md-3">
             <p class="mb-0 font-weight-bolder">GitHub</p>
         </div>
@@ -603,28 +612,28 @@
     <div class="section-10">
         <div class="bg-gray row mx-0">
             <div class="col-12 col-md-6 col-lg-7 order-2 order-md-1">
-                <h2 class="title text-uppercase">
+                <h2 class="title text-uppercase" data-aos="pixFadeUp" data-aos-duration="1000">
                     Arrange a demo
                 </h2>
-                <p class="section-text">
+                <p class="section-text" data-aos="pixFadeUp" data-aos-duration="1200">
                     Et nibh dignissim pellentesque interdum porta. Risus condimentum massa malesuada semper lacinia.
                     Risus blandit tempor ullamcorper mauris.
                 </p>
-                <button type="button" class="btn btn-demo border-0 text-uppercase">
+                <button type="button" class="btn btn-demo border-0 text-uppercase" data-aos="pixFadeUp" data-aos-duration="1200">
                     get started
                 </button>
             </div>
             <div class="col-12 col-md-6 col-lg-5 order-1 order-md-2">
-                <img src="assets/images/section-10-image.png" alt="pages" class="img-fluid">
+                <img src="assets/images/section-10-image.png" alt="pages" class="img-fluid" data-aos="fadeInDown" data-aos-duration="1000">
             </div>
         </div>
     </div>
-    <div class="section-11">
-        <h2 class="title text-uppercase text-center">
+    <div class="section-11" id="resources">
+        <h2 class="title text-uppercase text-center" data-aos="pixFadeUp" data-aos-duration="1000">
             Resources
         </h2>
         <div class="card-deck justify-content-center">
-            <div class="card border-0">
+            <div class="card border-0" data-aos="fadeInRight" data-aos-duration="500">
                 <div class="card-header p-0 border-0">
                     <img src="assets/images/laptop.png" class="card-img-top img-fluid" alt="laptop">
                 </div>
@@ -639,7 +648,7 @@
                     </a>
                 </div>
             </div>
-            <div class="card border-0">
+            <div class="card border-0" data-aos="fadeInRight" data-aos-duration="700">
                 <div class="card-header p-0 border-0">
                     <img src="assets/images/woman.png" class="card-img-top img-fluid" alt="woman">
                 </div>
@@ -654,7 +663,7 @@
                     </a>
                 </div>
             </div>
-            <div class="card border-0">
+            <div class="card border-0" data-aos="fadeInRight" data-aos-duration="900">
                 <div class="card-header p-0 border-0">
                     <img src="assets/images/note.png" class="card-img-top img-fluid" alt="note">
                 </div>
@@ -690,7 +699,7 @@
         </div>
     </div>
 </div>
-<footer class="container-fluid">
+<footer class="container-fluid" data-aos="pixFadeUp" data-aos-duration="800">
     <div class="row">
         <div class="col-12 col-md d-flex justify-content-between flex-column align-items-start">
             <img class="logo img-fluid" src="assets/images/logo.png" alt="logo">
@@ -699,19 +708,20 @@
         <div class="col-6 col-md">
             <h5 class="footer-title">Modules and features</h5>
             <ul class="list-unstyled text-small">
-                <li><a class="text-muted text-decoration-none footer-link" href="#">Sales</a></li>
-                <li><a class="text-muted text-decoration-none footer-link" href="#">CRM</a></li>
-                <li><a class="text-muted text-decoration-none footer-link" href="#">Projects / Jobs</a></li>
-                <li><a class="text-muted text-decoration-none footer-link" href="#">Scheduler</a></li>
-                <li><a class="text-muted text-decoration-none footer-link" href="#">Timesheets</a></li>
-                <li><a class="text-muted text-decoration-none footer-link" href="#">Dashboard</a></li>
+                <li><a class="text-muted text-decoration-none footer-link" href="#sale">Sales</a></li>
+                <li><a class="text-muted text-decoration-none footer-link" href="#crm">CRM</a></li>
+                <li><a class="text-muted text-decoration-none footer-link" href="#projects">Projects / Jobs</a></li>
+                <li><a class="text-muted text-decoration-none footer-link" href="#scheduler">Scheduler</a></li>
+                <li><a class="text-muted text-decoration-none footer-link" href="#time">Timesheets</a></li>
+                <li><a class="text-muted text-decoration-none footer-link" href="#dashboard">Dashboard</a></li>
             </ul>
         </div>
         <div class="col-6 col-md d-flex justify-content-between flex-column">
             <h5 class="footer-title">Information</h5>
             <ul class="list-unstyled text-small">
-                <li><a class="text-muted text-decoration-none footer-link" href="#">Industries we serve</a></li>
-                <li><a class="text-muted text-decoration-none footer-link" href="#">Resources</a></li>
+                <li><a class="text-muted text-decoration-none footer-link" href="#industries">Industries we serve</a>
+                </li>
+                <li><a class="text-muted text-decoration-none footer-link" href="#resources">Resources</a></li>
             </ul>
             <h5 class="footer-title">Contacts</h5>
             <ul class="list-unstyled text-small">
@@ -740,5 +750,6 @@
         </div>
     </div>
 </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>

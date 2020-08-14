@@ -1,3 +1,4 @@
+@import 'animation.css';
 .modal-backdrop {
   z-index: 2 !important;
 }

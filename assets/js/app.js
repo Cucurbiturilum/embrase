@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    $('select').each(function(){
+$(document).ready(function () {
+    $('select').each(function () {
         var $this = $(this), numberOfOptions = $(this).children('option').length;
 
         $this.addClass('select-hidden');
@@ -22,15 +22,15 @@ $(document).ready(function(){
 
         var $listItems = $list.children('li');
 
-        $styledSelect.click(function(e) {
+        $styledSelect.click(function (e) {
             e.stopPropagation();
-            $('div.select-styled.active').not(this).each(function(){
+            $('div.select-styled.active').not(this).each(function () {
                 $(this).removeClass('active').next('ul.select-options').hide();
             });
             $(this).toggleClass('active').next('ul.select-options').toggle();
         });
 
-        $listItems.click(function(e) {
+        $listItems.click(function (e) {
             e.stopPropagation();
             $styledSelect.text($(this).text()).removeClass('active');
             $this.val($(this).attr('rel'));
@@ -38,10 +38,16 @@ $(document).ready(function(){
             //console.log($this.val());
         });
 
-        $(document).click(function() {
+        $(document).click(function () {
             $styledSelect.removeClass('active');
             $list.hide();
         });
 
     });
+
+    $('.mobile-nav-link').on('click',function() {
+        $('.navbar-collapse').collapse('hide');
+    });
+
+    AOS.init();
 });
